@@ -1,1 +1,0 @@
-Merhabalar İsmim İbrahim Yılmazx
