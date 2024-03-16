@@ -22,7 +22,7 @@
 
 <script>
   var TUS_ENDPOINT = 'https://master.tus.io/files/'
-  var COMPANION_ENDPOINT = 'http://localhost:3020'
+  var COMPANION_ENDPOINT = 'https://dowsya.ix.tc'
   if (location.hostname === 'uppy.io') {
     COMPANION_ENDPOINT = '//companion.uppy.io'
   }
@@ -37,11 +37,7 @@
         { id: 'caption', name: 'Caption', placeholder: 'describe what the image is about' }
       ]
     })
-    .use(Uppy.GoogleDrive, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
-    .use(Uppy.Instagram, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
-    .use(Uppy.Dropbox, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
     .use(Uppy.Webcam, { target: Uppy.Dashboard })
-    .use(Uppy.Url, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
     .use(Uppy.Tus, { endpoint: TUS_ENDPOINT})
 
   uppy.on('success', function (files) {
