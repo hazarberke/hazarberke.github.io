@@ -26,8 +26,8 @@ body {
     background: #474747;
   }
     .container{
-        width: 800px; /*ortalanacak div genişliği*/
-        margin:0 auto; /*alt-üst(0) sağ-sol(auto) boşluk olacak*/
+        width: 800px;
+        margin:0 auto;
     }
  
 
